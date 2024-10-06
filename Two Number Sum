@@ -1,0 +1,17 @@
+# Two Number Sum
+def twosum(nums, target):
+    dic = {}
+    for i in range(0, len(nums)):
+        dic[nums[i]] = i
+        print(dic)
+    for i in range(0, len(nums)):
+        x = target - nums[i]
+        if x in dic and i != dic[x]:
+            return [i, dic[x]]
+    return None
+
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+target = 10
+
+print(twosum(nums, target))
