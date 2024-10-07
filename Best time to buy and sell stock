@@ -47,14 +47,14 @@ def maxProfit(prices):
 
         if price < min_price:
             print(price, end=" ")  # price = 7,1,5,3,6,4
-            min_price = price # min_price = 7,1,1,1,1,1
+            min_price = price  # min_price = 7,1,1,1,1,1
             print(min_price, end=" ")
 
-        profit = price - min_price # profit = 7-7=0,1-1=0,5-1=4,3-1=2,6-1=5,4-1
+        profit = price - min_price  # profit = 7-7=0,1-1=0,5-1=4,3-1=2,6-1=5,4-1
         print(profit, end=" ")
 
         if profit > max_profit:
-            max_profit = profit # max_profit = 0,0,4,4,5,5
+            max_profit = profit  # max_profit = 0,0,4,4,5,5
         print(max_profit, end=" ")
 
     return max_profit
@@ -63,4 +63,4 @@ def maxProfit(prices):
 # Space: O(1)
 
 
-print("\n", maxProfit(prices=[7, 1, 5, 3, 6, 4])) # max_profit = 5
+print("\n", maxProfit(prices=[7, 1, 5, 3, 6, 4]))  # max_profit = 5
