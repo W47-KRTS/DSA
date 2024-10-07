@@ -63,4 +63,4 @@ def maxProfit(prices):
 # Space: O(1)
 
 
-print("\n", maxProfit(prices=[7, 1, 5, 3, 6, 4]))
+print("\n", maxProfit(prices=[7, 1, 5, 3, 6, 4])) # max_profit = 5
